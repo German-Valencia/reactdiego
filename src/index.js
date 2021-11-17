@@ -1,17 +1,49 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import React from "react";
+import reactDom from "react-dom";
+import App from './App'
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+reactDom.render(
+<App/>, 
+document.getElementById('root')
 );
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+
+
+
+//import Button from "./components/Button";
+
+//componente funcional
+
+// const handleAlert = ()=>{
+//   alert('Hola...!!!')
+// }
+
+// const Saludar = (props) => {
+//   return (
+//     <div>
+//       <h1>{props.children}</h1>
+//     </div>
+//   );
+// };
+
+// //componente de clase
+// class Layout extends React.Component {
+//   render() {
+//     return (
+//       <div className="layout">
+//         <header>
+//           <Button handleAlert={handleAlert}>Alerta</Button>
+//         </header>
+
+//         <main>{this.props.children}</main>
+//       </div>
+//     );
+//   }
+// }
+
+// reactDom.render(
+//   <Layout>
+//     <Saludar>Hola, Germán 😁</Saludar>
+//   </Layout>,
+//   document.getElementById("root")
+// );
